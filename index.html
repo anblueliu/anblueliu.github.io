@@ -1,236 +1,545 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 3.0 License
-
-Name       : GrassTown     
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20120604
-
--->
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>anblue</title>
-<link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css" />
-<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+	<meta charset="UTF-8">
+
+	<title>Personal blog</title>
+	
+	<!-- Main CSS file -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/icon/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icon/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icon/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icon/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="images/icon/apple-touch-icon-57-precomposed.png">
+	<link rel="stylesheet" type="text/css" href="css/perfect.css"/>
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
 </head>
 <body>
-<div id="wrapper">
-	<div id="header-wrapper">
-		<div id="header">
-			<div id="logo">
-				<h1><a href="#"><em>anblue</em></a></h1>
-				<p>Welcome to my blog&nbsp;</&nbsp><a href="http://www.runoob.com/" rel="nofollow">Here's what you want </a></p>
-			</div>
-			<div id="menu">
-				<ul>
-					<li class="current_page_item"><a href="https://anblueliu.github.io/66.com" target="_blank"> P C</a></li>
-					<li><a href="https://anblueliu.github.io/途牛" target="_blank">The mobile terminal</a></li>
-					<li><a href="#">responsive</a></li>
-					<li><a href="#">works</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
+
+	<!-- PRELOADER -->
+	<div id="st-preloader">
+		<div id="pre-status">
+			<div class="preload-placeholder"></div>
 		</div>
 	</div>
-	<!-- end #header -->
-	<div id="page">
-		<div id="page-bgtop">
-			<div id="page-bgbtm">
-				<div id="content">
-					<div class="post">
-						<h2 class="title"><a href="#">Welcome to my ajax </a></h2>
-						<div class="entry">
-							<p>This is <strong> ajax</strong>One, ajax this is JQuery's most basic step for ajax encapsulation, by using this function to complete all the functions of asynchronous communication. In other words, we can do asynchronous refreshes in this way. But it has a lot of parameters, and sometimes it can be a little tricky. Look at the common parameters:
-Var configObj = {
-Method / / data submission: get and post
-The submission of url / / data
-Async / / does it support asynchronous refresh, by default true
-Data / / data that needs to be submitted
-The dataType / / server returns the type of data such as XML, String, Json, etc
-Success / / the callback function after success
-Error / / the callback function after the failure
-}
-$. Ajax (configObj); / / call from the $.ajax function.
+	<!-- /PRELOADER -->
 
-
-							</p>
-							<p>
-								Two, $.post, this function is actually a further encapsulation of $.ajax, reducing the parameters and simplifying the operation, but the scope is smaller. Post simplifies data submission and can only be submitted by post. The server can only be accessed asynchronously, unable to synchronize access and not error handling. In these cases, we can use this function to facilitate our programming, its main parameters, such as method, async, etc., which we can't change. The examples are no longer covered.
-Url: send the request address.
-Data: to send the Key/value parameter.
-Callback: the callback function when the success is sent.
-Type: return content format, XML, HTML, script, json, text, _default.
-Three, $. Get, and $. Post, this function is to submit data encapsulation of the get method, can only use the get to submit data to solve asynchronous refresh on the way of using the way and the top was similar. I'm not going to do that here.
-Four, $.getjson, this is a further encapsulation, which is the return data type to be used for Json. There are three parameters that need us to set up, very simple: url, [data], [callback].
-
-							</p>
-						</div>
-						<div class="byline">
-							<p class="meta">May 07, 2012 Posted by <a href="#">anblue</a></p>
-							<p class="links"><a href="#">Read More</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" title="b0x w">Comments</a></p>
-						</div>
-					</div>
-					<div class="post">
-						<h2 class="title"><a href="#">My favorite REACT</a></h2>
-						<div class="entry">
-							<p>Jsx grammar
-HTML language to write directly in the JavaScript language, do not add any quotes, this is the JSX syntax, it allows the mix writing HTML and JavaScript, learned about AngularJs see the following code will feel very familiar, let's look at the code:
- let data =["fa","ffs","fa","af"]
-			var zhu =React.createClass({
-				render:funtion(){
-					let arr=[];
-					arr=this.props.data.map(function(item,index){
-						return <fu cont={item} key={index}/>
-					})
-				 return(
-				 <div>
-				 	<h2>ff</h2>
-				    <ul>{arr}</ul>
-				 </div>
-				   
-				 )
-				 
-				}
-			});
-			
-		    ReactDOM.render(
-		       <zhu data={data}/>,
-		       document.getElementById("box")
-		       
-		    );
-							</p>
-						</div>
-						<div class="byline">
-							<p class="meta">May 01, 2012 Posted by <a href="#">anblue</a></p>
-							<p class="links"><a href="#">Read More</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" title="b0x w">Comments</a></p>
-						</div>
-					</div>
-					<div class="post">
-						<h2 class="title"><a href="#">JSON to JS objects, JS objects to JSON </a></h2>
-						<div class="entry">
-							<p>A json string sent from the server, how can you make a web side call as a JavaScript object (json object)?
-If you're using jQuery, it's convenient to pass the parameter Datatype to json in a series of functions in ajax, and the data that is returned is the json object.
-PS: if you want to handle the form as a json string, you can use the.serialize () and.serializearray (), which can be handled using jQuery. Param () if you want to call it as a URL.
-2, $. ParseJSON (jsonstr)
-The browser's own JSON. Parse (jsonstr)
-Use strings to transfer code functionality
-Eval (' + jsonstr + '); (not recommended, the code is executed)
-Use json official json-js
-The parse () method
-Second, json object transliterals
-1, the JSON. Stringify (jsonobj);
-2, obj. ToJSONString ()
-Interrotation with Java objects
-/ / turn the Java object list into a json object array and turn it into a string
-JSONArray array = JSONArray. FromObject (userlist);
-String jsonstr = array. The toString ();
-/ / convert Java objects to json objects and convert them to strings
-JSONObject object = JSONObject. FromObject (invite);
-Log4jInit. Ysulogger. Debug (object. The toString ());
-/ / convert the JSON string into an array of JAVA objects
-String personstr = getRequest (). The getParameter (" persons ");
-JSONArray json = JSONArray. FromObject (personstr);
-List < InvoidPerson > persons = (List < InvoidPerson >) jsonarray.tocollection (json, nvoidperson.class);
-/ / convert the JSON string to JAVA objects
-STR = "{\" lendperson \ ": \" li si \ ", \ "lendcompany \" : \ "co., LTD. \" and \ "checkperson \" : \ \ "", dick, and harry.
-\ "lenddate \" : \ "the 2010-07-19 T00:00:00 \", \ "lendcounts \" : 4, \"
-Passports \ ": [{\" passportid \ ": \" d \ ", \ "name \" : \ "Li Yuchuan \", \ "passporttype \" : \ \ "K"},
-K9051 {\ "passportid \" : \ "\", \ "name \" : \ "li ping \", \ "passporttype \" : \ \ "K"},
-{\ "passportid \" : \ "K90517 \", \ "name \" : \ "Yuan Hanmei \", \ "passporttype \" : \ \ "K"},
-{\ "passportid \" : \ "K905199 \", \ "name \" : \ "He Ming \", \ "passporttype \" : \ \ "K"}]} ";
-JSONObject JSONObject = JSONObject. FromObject (STR);
-PassportLendsEntity passportlends = null;
-Try {
-/ / get a json array
-JSONArray array = jsonobject. GetJSONArray (" passports ");
-/ / convert the json array to List < PassPortForLendsEntity > generics
-List < PassPortForLendsEntity > List = new ArrayList < PassPortForLendsEntity > ()
-For (int I = 0; I < array.size (); I + +) {
-JSONObject object = (JSONObject) array. The get (I);
-PassPortForLendsEntity passport = (PassPortForLendsEntity) JSONObject. ToBean (object,
-PassPortForLendsEntity. Class);
-If (passport! = null) {
-List. The add (passport);
-}
-}
-/ / convert PassportLendsEntity entity class
-Passportlends = (PassportLendsEntity) JSONObject. ToBean (JSONObject, PassportLendsEntity. Class);</p>
-						</div>
-						<div class="byline">
-							<p class="meta">May 20, 2012 Posted by <a href="#">anblueliu</a></p>
-							<p class="links"><a href="#">Read More</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" title="b0x w">Comments</a></p>
-						</div>
-					</div>
-					<div style="clear: both;">&nbsp;</div>
+	
+	<!-- HEADER -->
+	<header id="header">
+		<nav class="navbar st-navbar navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+				    	<span class="icon-bar"></span>
+				    	<span class="icon-bar"></span>
+				    	<span class="icon-bar"></span>
+					</button>
+					<a class="logo" href="index.html"><img src="images/logo.png" alt=""></a>
 				</div>
-				<!-- end #content -->
-				<div id="sidebar">
-					<ul>
-						<li>
-							<div id="search" >
-								<form method="get" action="#">
-									<div>
-										<input type="text" name="s" id="search-text" value="" />
-										<input type="submit" id="search-submit" value="GO" />
-									</div>
-								</form>
-							</div>
-							<div style="clear: both;">&nbsp;</div>
-						</li>
-						<li>
-							<h2>Aliquam tempus</h2>
-							<p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper consectetuer hendrerit.</p>
-						</li>
-						<li>
-							<h2>About AJAX</h2>
-							<ul>
-								<li><a href="http://www.cnblogs.com/tylerdonet/p/3520862.html">The $.ajax () method is detailed</a></li>
-								<li><a href="http://blog.csdn.net/liujiahan629629/article/details/22229669">Ajax in JQuery</a></li>
-								<li><a href="http://www.cnblogs.com/Garden-blog/archive/2011/03/11/1981778.html">Ajax complete tutorial</a></li>
-								<li><a href="http://www.cnblogs.com/joyco773/p/6383450.html">Summary of the AJAX written interview questions</a></li>
-								<li><a href="http://www.cnblogs.com/xmphoenix/archive/2011/11/21/2257651.html">Jquery's ajax synchronization and asynchrony</a></li>
-								<li><a href="http://blog.sina.com.cn/s/blog_9c581bd30101d9xg.html">The Ajax principle process synchronizes and asynchronously differentiates the pros and cons</a></li>
-							</ul>
-						</li>
-						<li>
-							<h2>Useful to React</h2>
-							<ul>
-								<li><a href="http://www.ruanyifeng.com/blog/2015/03/react.html">React primer example tutorial</a></li>
-								<li><a href="https://facebook.github.io/react/">A Simple Component </a></li>
-								<li><a href="http://www.cocoachina.com/webapp/20150721/12692.html">An introduction to ReactJs primer</a></li>
-								<li><a href="http://react-china.org/t/react-ie8/5611">The development government website USES React and is compatible with IE8</a></li>
-								<li><a href="http://developer.51cto.com/art/201512/503104.htm">How to develop a powerful Web application using React. Js</a></li>
-								<li><a href="https://segmentfault.com/a/1190000005356568">The example explains the front-end development process based on React + Redux</a></li>
-							</ul>
-						</li>
-						<li>
-							<h2>About the application of jsonp</h2>
-							<ul>
-								<li><a href="http://www.cnblogs.com/yuzhongwusan/archive/2012/12/11/2812849.html">jsonp Break down</a></li>
-								<li><a href="http://www.cnblogs.com/chopper/archive/2012/03/24/2403945.html">Deep into JSONP - solve ajax cross-domain problems</a></li>
-								<li><a href="http://blog.csdn.net/u011897301/article/details/52679486">Simple and thorough understanding of JSONP principle and usage</a></li>
-								<li><a href="http://blog.csdn.net/educast/article/details/50468800">The JSONP principle and implementation</a></li>
-							</ul>
-						</li>
+
+				<div class="collapse navbar-collapse" id="st-navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+				    	<li><a href="#slider">Home</a></li>
+				    	<li><a href="#personal-works">Personalworks</a></li>
+				    	<!--<li><a href="#our-works">Works</a></li>-->
+				    	<!--<li><a href="#pricing">Pricing</a></li>-->
+				    	<li><a href="#contact">Contact</a></li>
+				    	<li><a href="blog.html">Blog</a></li>
 					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+	</header>
+	<!-- /HEADER -->
+
+
+	<!-- SLIDER -->
+	<section id="slider">
+		<div id="home-carousel" class="carousel slide" data-ride="carousel">			
+			<div class="carousel-inner">
+				<div class="item active" style="background-image: url(images/slider/01.jpg)">
+					<div class="carousel-caption container">
+						<div class="row">
+							<div class="col-sm-7">
+								<h1>You are entire </h1>
+								<h2>creative world</h2>
+								<p>初心不改，信念不移。</p>
+							</div>
+						</div>
+					</div>					
 				</div>
-				<!-- end #sidebar -->
-				<div style="clear: both;">&nbsp;</div>
+				<div class="item" style="background-image: url(images/slider/02.jpg)">
+					<div class="carousel-caption container">
+						<div class="row">
+							<div class="col-sm-7">
+								<h1>You are entire </h1>
+								<h2>creative world</h2>
+								<p>初心不改，信念不移。</p>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="item" style="background-image: url(images/slider/03.jpg)">
+					<div class="carousel-caption container">
+						<div class="row">
+							<div class="col-sm-7">
+								<h1>You are entire </h1>
+								<h2>creative world</h2>
+								<p>初心不改，信念不移。</p>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="item" style="background-image: url(images/slider/04.jpg)">
+					<div class="carousel-caption container">
+						<div class="row">
+							<div class="col-sm-7">
+								<h1>You are entire </h1>
+								<h2>creative world</h2>
+								<p>初心不改，信念不移。</p>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<a class="home-carousel-left" href="#home-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+				<a class="home-carousel-right" href="#home-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+			</div>		
+		</div> <!--/#home-carousel--> 
+    </section>
+	<!-- /SLIDER -->
+
+	
+	<!-- SERVICES -->
+	<section id="personal-works">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+						<h1>Personal works</h1>
+						<span class="st-border"></span>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 st-service">
+					<div class="thumbnail works_img">
+				      <img src="images/捕获.GIF" alt="66社区游戏">
+				      <div class="caption">
+				        <h3>66社区游戏作品</h3>
+				        <p><a href="https://anblueliu.github.io/66.com" class="btn btn-primary" role="button">作品入口</a></p>
+				      </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 st-service">
+					<div class="thumbnail works_img">
+				      <img src="images/tuniu.jpg" alt="途牛移动端作品">
+				      <div class="caption">
+				        <h3>途牛移动端作品</h3>
+				        <p><a href="https://anblueliu.github.io/Way cattle1" class="btn btn-primary" role="button">作品入口</a></p>
+				      </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 st-service">
+					<div class="thumbnail works_img">
+				      <img src="images/applogo.jpg" alt="旅游评价移动端APP作品">
+				      <div class="caption">
+				        <h3>旅游评价移动端APP作品</h3>
+				        <p><a href="https://anblueliu.github.io/comment" class="btn btn-primary" role="button">作品入口</a></p>
+				      </div>
+				    </div> optio dolor.</p>
+				</div>
+
+				<div class="col-md-4 col-sm-6 st-service">
+					<div class="thumbnail works_img">
+				      <img src="images/timg.jpg" alt="京东移动端作品">
+				      <div class="caption">
+				        <h3>京东移动端作品</h3>
+				        <p><a href="https://anblueliu.github.io/jd-tmt" class="btn btn-primary" role="button">作品入口</a></p>
+				      </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 st-service">
+					<div class="thumbnail works_img">
+				      <img src="images/date.jpg" alt="自写日历插件</">
+				      <div class="caption">
+				        <h3>自写日历插件</h3>
+				        <p><a href="https://anblueliu.github.io/calendar" class="btn btn-primary" role="button">作品入口</a></p>
+				      </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 st-service">
+					<div class="thumbnail works_img">
+				      <img src="images/smq.png" alt="杭州思漫奇网站作品">
+				      <div class="caption">
+				        <h3>杭州思漫奇网站作品</h3>
+				        <p><a href="https://anblueliu.github.io/diffuse" class="btn btn-primary" role="button">作品入口</a></p>
+				      </div>
+				    </div>
+				</div>
 			</div>
 		</div>
+	</section>
+	<!-- /SERVICES -->
+
+	<!--
+		<section id="our-works">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+						<h1>Out Works</h1>
+						<span class="st-border"></span>
+					</div>
+				</div>
+
+				<div class="portfolio-wrapper" >
+					<div class="col-md-12">
+						<ul class="filter">  			
+							<li><a class="active" href="#" data-filter="*">All</a></li>	
+							<li><a href="#" data-filter=".wordpress">WordPress</a></li>
+							<li><a href="#" data-filter=".html">HTML</a></li>
+							<li><a href="#" data-filter=".graphic">graphic</a></li>
+							<li><a href="#" data-filter=".php">PHP</a></li>
+							<li><a href="#" data-filter=".bootstrap">bootstrap</a></li>
+						</ul>
+					</div>
+					
+					<div class="portfolio-items">
+						
+						<div class="col-md-4 col-sm-6 work-grid wordpress graphic">
+							<div class="portfolio-content">
+								<img class="img-responsive" src="images/works/portfolio-1.jpg" alt="">
+								<div class="portfolio-overlay">
+									<a href="images/works/portfolio-1.jpg"><i class="fa fa-camera-retro"></i></a>
+									<h5>Web Development</h5>
+									<p>Design, Develop</p>
+								</div>
+							</div>	
+						</div>
+						
+						<div class="col-md-4 col-sm-6 work-grid html php bootstrap">
+							<div class="portfolio-content">
+								<img class="img-responsive" src="images/works/portfolio-2.jpg" alt="">
+								<div class="portfolio-overlay">
+									<a href="images/works/portfolio-2.jpg"><i class="fa fa-camera-retro"></i></a>
+									<h5>Web Development</h5>
+									<p>Design, Develop</p>
+								</div>
+							</div>	
+						</div>
+						
+						<div class="col-md-4 col-sm-6 work-grid wordpress graphic">
+							<div class="portfolio-content">
+								<img class="img-responsive" src="images/works/portfolio-3.jpg" alt="">
+								<div class="portfolio-overlay">
+									<a href="images/works/portfolio-3.jpg"><i class="fa fa-camera-retro"></i></a>
+									<h5>Web Development</h5>
+									<p>Design, Develop</p>
+								</div>
+							</div>	
+						</div>
+						
+						<div class="col-md-4 col-sm-6 work-grid html php bootstrap">
+							<div class="portfolio-content">
+								<img class="img-responsive" src="images/works/portfolio-4.jpg" alt="">
+								<div class="portfolio-overlay">
+									<a href="images/works/portfolio-4.jpg"><i class="fa fa-camera-retro"></i></a>
+									<h5>Web Development</h5>
+									<p>Design, Develop</p>
+								</div>
+							</div>	
+						</div>
+						
+						<div class="col-md-4 col-sm-6 work-grid wordpress graphic php">
+							<div class="portfolio-content">
+								<img class="img-responsive" src="images/works/portfolio-5.jpg" alt="">
+								<div class="portfolio-overlay">
+									<a href="images/works/portfolio-5.jpg"><i class="fa fa-camera-retro"></i></a>
+									<h5>Web Development</h5>
+									<p>Design, Develop</p>
+								</div>
+							</div>	
+						</div>
+						
+						<div class="col-md-4 col-sm-6 work-grid html bootstrap graphic">
+							<div class="portfolio-content">
+								<img class="img-responsive" src="images/works/portfolio-6.jpg" alt="">
+								<div class="portfolio-overlay">
+									<a href="images/works/portfolio-6.jpg"><i class="fa fa-camera-retro"></i></a>
+									<h5>Web Development</h5>
+									<p>Design, Develop</p>
+								</div>
+							</div>	
+						</div>
+						
+					</div>				
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	
+	<section id="pricing">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+						<h1>Pricing</h1>
+						<span class="st-border"></span>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="st-pricing text-center">
+						<h5></h5>
+						<h3></h3>
+						<div class="st-border"></div>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<a href="" class="btn btn-send">Sign Up</a>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="st-pricing text-center">
+						<h5></h5>
+						<h3></h3>
+						<div class="st-border"></div>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<a href="" class="btn btn-send">Sign Up</a>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="st-pricing text-center">
+						<h5></h5>
+						<h3></h3>
+						<div class="st-border"></div>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<a href="" class="btn btn-send">Sign Up</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	
+		
+	-->
+	
+
+
+	
+
+	<!-- ABOUT US -->
+	<section id="about-us">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="about-us text-center">
+						<h4>醉情于山水</h4>
+						<p>山水熏心，陶冶性情。</p>
+						<a href="" class="btn btn-send">木杖兄</a>
+					</div>
+				</div>
+				<div class="col-sm-6 our-office">
+					<div id="office-carousel" class="carousel slide" data-ride="carousel">			
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="images/shanshui_1.jpg" alt="">
+							</div>
+							<div class="item">
+								<img src="images/shanshui_2.jpg" alt="">			
+							</div>
+							<div class="item">
+								<img src="images/shanshui_3.jpg" alt="">			
+							</div>
+							
+							<a class="office-carousel-left" href="#office-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+							<a class="office-carousel-right" href="#office-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+						</div>		
+					</div> <!--/#office-carousel--> 
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /ABOUT US -->
+    <div class="copyrights">Collect from <a href="muzhangxion.github.io" >博客</a></div>
+	
+	<!-- TESTIMONIAL -->
+	<section id="testimonial">
+		<div class="container">
+			<div class="row">
+				<div class="overlay"></div>
+				<div class="col-md-8 col-md-offset-2 col-sm-12">
+					<div class="st-testimonials">
+
+						<div class="item active text-center">
+							<p>"聪明的人依靠自己的工作，愚蠢的人依靠自己的希望。"</p>
+							<div class="st-border"></div>
+							<div class="client-info">
+								<h5>To me</h5>
+								<span>muzhangxion</span>
+							</div>
+						</div>
+
+						<div class="item text-center">
+							<p>"越工作越能工作，越忙碌越能创造出闲暇。"</p>
+							<div class="st-border"></div>
+							<div class="client-info">
+								<h5>To me</h5>
+								<span>muzhangxion</span>
+							</div>
+						</div>
+
+						<div class="item text-center">
+							<p>"你将来有的，在于你现在所做的"</p>
+							<div class="st-border"></div>
+							<div class="client-info">
+								<h5>To me</h5>
+								<span>muzhangxion</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /TESTIMONIAL -->
+
+
+
+	
+
+	
+	<!-- CONTACT -->
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+						<h1>Contact me</h1>
+						<span class="st-border"></span>
+					</div>
+				</div>
+				<div class="col-sm-4 contact-info">
+					<p class="st-address"><i class="fa fa-map-marker"></i> <strong>Baiyun district, Guang Zhou, CN</strong></p>
+					<p class="st-phone"><i class="fa fa-mobile"></i> <strong>+00 123-456-789</strong></p>
+					<p class="st-email"><i class="fa fa-envelope-o"></i> <strong>mzxion@163.com</strong></p>
+					<p class="st-website"><i class="fa fa-globe"></i> <strong>muzhangxion.github.io</strong></p>
+				
+				</div>
+				<div class="col-sm-7 col-sm-offset-1">
+					<form action="php/send-contact.php" class="contact-form" name="contact-form" method="post">
+						<div class="row">
+							<div class="col-sm-6">
+								<input type="text" name="name" required="required" placeholder="Name*">
+							</div>
+							<div class="col-sm-6">
+								<input type="email" name="email" required="required" placeholder="Email*">
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="subject" placeholder="Subject">
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="website" placeholder="Website">
+							</div>
+							<div class="col-sm-12">
+								<textarea name="message" required="required" cols="30" rows="7" placeholder="Message*"></textarea>
+							</div>
+							<div class="col-sm-12">
+								<input type="submit" name="submit" value="Send Message" class="btn btn-send">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /CONTACT -->
+
+	<!-- FOOTER -->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<!-- SOCIAL ICONS -->
+				<div class="col-sm-6 col-sm-push-6 footer-social-icons">
+					<span>Follow us:</span>
+					<a href=""><i class="fa fa-facebook"></i></a>
+					<a href=""><i class="fa fa-twitter"></i></a>
+					<a href=""><i class="fa fa-google-plus"></i></a>
+					<a href=""><i class="fa fa-pinterest-p"></i></a>
+				</div>
+				<!-- /SOCIAL ICONS -->
+				<div class="col-sm-6 col-sm-pull-6 copyright">
+					<p>&copy; 2015 <a href="">ShapedTheme</a>. All Rights Reserved <a href="javascript:;" target="_blank" title="木杖兄">木杖兄</a> - Collect from <a href="muzhangxion.github.io" title="博客" target="_blank">博客</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- /FOOTER -->
+
+
+	<!-- Scroll-up -->
+	<div class="scroll-up">
+		<ul><li><a href="#header"><i class="fa fa-angle-up"></i></a></li></ul>
 	</div>
-	<!-- end #page -->
-	<div id="footer">
-	<p>2012. Sitename.com.The mountain range, the water a journey, the body to the elm, the bank, night deep.The wind is more, the snow is more, the talk of the village heart dream is not, the garden does not have this sound.</p>
-  
-	</div>
-</div>
-<!-- end #footer -->
+
+	
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery.min.js"></script><!-- jQuery -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script><!-- Bootstrap -->
+	<script type="text/javascript" src="js/jquery.parallax.js"></script><!-- Parallax -->
+	<script type="text/javascript" src="js/smoothscroll.js"></script><!-- Smooth Scroll -->
+	<script type="text/javascript" src="js/masonry.pkgd.min.js"></script><!-- masonry -->
+	<script type="text/javascript" src="js/jquery.fitvids.js"></script><!-- fitvids -->
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script><!-- Owl-Carousel -->
+	<script type="text/javascript" src="js/jquery.counterup.min.js"></script><!-- CounterUp -->
+	<script type="text/javascript" src="js/waypoints.min.js"></script><!-- CounterUp -->
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script><!-- isotope -->
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script><!-- magnific-popup -->
+	<script type="text/javascript" src="js/scripts.js"></script><!-- Scripts -->
+
+
 </body>
 </html>
