@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#wrap{
+				margin: 25px auto 0 auto;
+				width: 442px;
+				height: 634px;
+				background-color: #262c3c;
+			}
+			#header{
+				width: 100%;
+				height: 126px;
+				position: relative;
+			}
+			#header p:nth-of-type(1){
+				font-family: "微软雅黑";
+				font-size: 27px;
+				color: white;
+				position: absolute;
+				left: 33px;
+				top: 46px;
+			}
+			#header p:nth-of-type(2){
+				font-family: "微软雅黑";
+				font-size: 17px;
+				color: #657bff;
+				position: absolute;
+				left: 29px;
+				top: 102px;
+			}
+			#mid{
+				width: 100%;
+				height: 105px;
+				position: relative;
+			}
+			#mid p{
+				font-family: "微软雅黑";
+				font-size: 18px;
+				color: white;
+				position: absolute;
+				left: 29px;
+				top: 13px;
+			}
+			#mid span:nth-of-type(1){
+				cursor: pointer;
+				font-family: "微软雅黑";
+				font-size: 17px;
+				color: white;
+				position: absolute;
+				right: 88px;
+				top: 13.5px;
+			}
+			#mid span:nth-of-type(2){
+				cursor: pointer;
+				font-family: "微软雅黑";
+				font-size: 17px;
+				color: white;
+				position: absolute;
+				right: 49px;
+				top: 13.5px;
+			}
+			#mid ul{
+				width: 350px;
+				height: 45px;
+				list-style: none;
+				position: absolute;
+				left: 33px;
+				top: 60px;
+			}
+			#mid ul li{
+				float: left;
+				width: 50px;
+				height: 45px;
+				font-size: 20px;
+				line-height: 45px;
+				text-align: center;
+				color: white;
+			}
+			.box{
+				width: 100%;
+				height: 403px;
+				position: relative;
+			}
+			#riLi{
+				width: 350px;
+				height: 378px;
+				list-style: none;
+				position: absolute;
+				left: 33px;
+				top: 0px;
+				
+			}
+			#riLi li{
+				font-family: "微软雅黑";
+				float: left;
+				width: 50px;
+				height: 63px;
+				font-size: 15px;
+				line-height: 63px;
+				text-align: center;
+				font-weight: 100;
+			}
+			.sel{
+				background-color: #ff6600;
+				border: 1px solid white;
+				
+			}	
+			.a{
+				color: #595d69;
+			}	
+			.b{
+				color: white;
+			}
+		</style>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/riLi.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="wrap"></div>
+	</body>
+	<script type="text/javascript">
+		$('#wrap').riLi({
+			line:['-','-'],
+			der:['左','右'],
+			a:['1','2']
+		});
+	</script>
+</html>

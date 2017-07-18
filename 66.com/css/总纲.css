@@ -1,0 +1,14 @@
+@charset "utf-8";
+html{font: normal 12px/1.5 "新宋体",Arial,sans-serif;}
+body,div,ul,ol,li,p,span,label,dl,dt,dd,form,input,textarea,select,h1,h2,h3,h4,h5,h6,table,th,tr,td,iframe,object,center,fieldset,legend,ins,del{margin: 0px;padding: 0px;}
+img,th,td,fieldset{border:none;}
+li{list-style: none;}
+img{vertical-align: top;}
+em,i{font-style: normal;}
+h1,h2,h3,h4,h5,h6{font-size: 100%;font-weight: normal;}
+input,select,textarea{font-size: 100%;}
+a,input{outline: none;}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+.clearfix:after{content:".";display: block;height: 0px;visibility: hidden;clear: both;}
+.clearfix{*zoom: 1;}

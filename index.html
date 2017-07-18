@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 3.0 License
+
+Name       : GrassTown     
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20120604
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>anblue</title>
+<link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header">
+			<div id="logo">
+				<h1><a href="#"><em>anblue</em></a></h1>
+				<p>Welcome to my blog&nbsp;</&nbsp><a href="http://www.runoob.com/" rel="nofollow">Here's what you want </a></p>
+			</div>
+			<div id="menu">
+				<ul>
+					<li class="current_page_item"><a href="https://anblueliu.github.io/66.com" target="_blank"> P C</a></li>
+					<li><a href="https://anblueliu.github.io/途牛" target="_blank">The mobile terminal</a></li>
+					<li><a href="#">responsive</a></li>
+					<li><a href="#">works</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="content">
+					<div class="post">
+						<h2 class="title"><a href="#">Welcome to my ajax </a></h2>
+						<div class="entry">
+							<p>This is <strong> ajax</strong>One, ajax this is JQuery's most basic step for ajax encapsulation, by using this function to complete all the functions of asynchronous communication. In other words, we can do asynchronous refreshes in this way. But it has a lot of parameters, and sometimes it can be a little tricky. Look at the common parameters:
+Var configObj = {
+Method / / data submission: get and post
+The submission of url / / data
+Async / / does it support asynchronous refresh, by default true
+Data / / data that needs to be submitted
+The dataType / / server returns the type of data such as XML, String, Json, etc
+Success / / the callback function after success
+Error / / the callback function after the failure
+}
+$. Ajax (configObj); / / call from the $.ajax function.
+
+
+							</p>
+							<p>
+								Two, $.post, this function is actually a further encapsulation of $.ajax, reducing the parameters and simplifying the operation, but the scope is smaller. Post simplifies data submission and can only be submitted by post. The server can only be accessed asynchronously, unable to synchronize access and not error handling. In these cases, we can use this function to facilitate our programming, its main parameters, such as method, async, etc., which we can't change. The examples are no longer covered.
+Url: send the request address.
+Data: to send the Key/value parameter.
+Callback: the callback function when the success is sent.
+Type: return content format, XML, HTML, script, json, text, _default.
+Three, $. Get, and $. Post, this function is to submit data encapsulation of the get method, can only use the get to submit data to solve asynchronous refresh on the way of using the way and the top was similar. I'm not going to do that here.
+Four, $.getjson, this is a further encapsulation, which is the return data type to be used for Json. There are three parameters that need us to set up, very simple: url, [data], [callback].
+
+							</p>
+						</div>
+						<div class="byline">
+							<p class="meta">May 07, 2012 Posted by <a href="#">anblue</a></p>
+							<p class="links"><a href="#">Read More</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" title="b0x w">Comments</a></p>
+						</div>
+					</div>
+					<div class="post">
+						<h2 class="title"><a href="#">My favorite REACT</a></h2>
+						<div class="entry">
+							<p>Jsx grammar
+HTML language to write directly in the JavaScript language, do not add any quotes, this is the JSX syntax, it allows the mix writing HTML and JavaScript, learned about AngularJs see the following code will feel very familiar, let's look at the code:
+ let data =["fa","ffs","fa","af"]
+			var zhu =React.createClass({
+				render:funtion(){
+					let arr=[];
+					arr=this.props.data.map(function(item,index){
+						return <fu cont={item} key={index}/>
+					})
+				 return(
+				 <div>
+				 	<h2>ff</h2>
+				    <ul>{arr}</ul>
+				 </div>
+				   
+				 )
+				 
+				}
+			});
+			
+		    ReactDOM.render(
+		       <zhu data={data}/>,
+		       document.getElementById("box")
+		       
+		    );
+							</p>
+						</div>
+						<div class="byline">
+							<p class="meta">May 01, 2012 Posted by <a href="#">anblue</a></p>
+							<p class="links"><a href="#">Read More</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" title="b0x w">Comments</a></p>
+						</div>
+					</div>
+					<div class="post">
+						<h2 class="title"><a href="#">JSON to JS objects, JS objects to JSON </a></h2>
+						<div class="entry">
+							<p>A json string sent from the server, how can you make a web side call as a JavaScript object (json object)?
+If you're using jQuery, it's convenient to pass the parameter Datatype to json in a series of functions in ajax, and the data that is returned is the json object.
+PS: if you want to handle the form as a json string, you can use the.serialize () and.serializearray (), which can be handled using jQuery. Param () if you want to call it as a URL.
+2, $. ParseJSON (jsonstr)
+The browser's own JSON. Parse (jsonstr)
+Use strings to transfer code functionality
+Eval (' + jsonstr + '); (not recommended, the code is executed)
+Use json official json-js
+The parse () method
+Second, json object transliterals
+1, the JSON. Stringify (jsonobj);
+2, obj. ToJSONString ()
+Interrotation with Java objects
+/ / turn the Java object list into a json object array and turn it into a string
+JSONArray array = JSONArray. FromObject (userlist);
+String jsonstr = array. The toString ();
+/ / convert Java objects to json objects and convert them to strings
+JSONObject object = JSONObject. FromObject (invite);
+Log4jInit. Ysulogger. Debug (object. The toString ());
+/ / convert the JSON string into an array of JAVA objects
+String personstr = getRequest (). The getParameter (" persons ");
+JSONArray json = JSONArray. FromObject (personstr);
+List < InvoidPerson > persons = (List < InvoidPerson >) jsonarray.tocollection (json, nvoidperson.class);
+/ / convert the JSON string to JAVA objects
+STR = "{\" lendperson \ ": \" li si \ ", \ "lendcompany \" : \ "co., LTD. \" and \ "checkperson \" : \ \ "", dick, and harry.
+\ "lenddate \" : \ "the 2010-07-19 T00:00:00 \", \ "lendcounts \" : 4, \"
+Passports \ ": [{\" passportid \ ": \" d \ ", \ "name \" : \ "Li Yuchuan \", \ "passporttype \" : \ \ "K"},
+K9051 {\ "passportid \" : \ "\", \ "name \" : \ "li ping \", \ "passporttype \" : \ \ "K"},
+{\ "passportid \" : \ "K90517 \", \ "name \" : \ "Yuan Hanmei \", \ "passporttype \" : \ \ "K"},
+{\ "passportid \" : \ "K905199 \", \ "name \" : \ "He Ming \", \ "passporttype \" : \ \ "K"}]} ";
+JSONObject JSONObject = JSONObject. FromObject (STR);
+PassportLendsEntity passportlends = null;
+Try {
+/ / get a json array
+JSONArray array = jsonobject. GetJSONArray (" passports ");
+/ / convert the json array to List < PassPortForLendsEntity > generics
+List < PassPortForLendsEntity > List = new ArrayList < PassPortForLendsEntity > ()
+For (int I = 0; I < array.size (); I + +) {
+JSONObject object = (JSONObject) array. The get (I);
+PassPortForLendsEntity passport = (PassPortForLendsEntity) JSONObject. ToBean (object,
+PassPortForLendsEntity. Class);
+If (passport! = null) {
+List. The add (passport);
+}
+}
+/ / convert PassportLendsEntity entity class
+Passportlends = (PassportLendsEntity) JSONObject. ToBean (JSONObject, PassportLendsEntity. Class);</p>
+						</div>
+						<div class="byline">
+							<p class="meta">May 20, 2012 Posted by <a href="#">anblueliu</a></p>
+							<p class="links"><a href="#">Read More</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" title="b0x w">Comments</a></p>
+						</div>
+					</div>
+					<div style="clear: both;">&nbsp;</div>
+				</div>
+				<!-- end #content -->
+				<div id="sidebar">
+					<ul>
+						<li>
+							<div id="search" >
+								<form method="get" action="#">
+									<div>
+										<input type="text" name="s" id="search-text" value="" />
+										<input type="submit" id="search-submit" value="GO" />
+									</div>
+								</form>
+							</div>
+							<div style="clear: both;">&nbsp;</div>
+						</li>
+						<li>
+							<h2>Aliquam tempus</h2>
+							<p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper consectetuer hendrerit.</p>
+						</li>
+						<li>
+							<h2>About AJAX</h2>
+							<ul>
+								<li><a href="http://www.cnblogs.com/tylerdonet/p/3520862.html">The $.ajax () method is detailed</a></li>
+								<li><a href="http://blog.csdn.net/liujiahan629629/article/details/22229669">Ajax in JQuery</a></li>
+								<li><a href="http://www.cnblogs.com/Garden-blog/archive/2011/03/11/1981778.html">Ajax complete tutorial</a></li>
+								<li><a href="http://www.cnblogs.com/joyco773/p/6383450.html">Summary of the AJAX written interview questions</a></li>
+								<li><a href="http://www.cnblogs.com/xmphoenix/archive/2011/11/21/2257651.html">Jquery's ajax synchronization and asynchrony</a></li>
+								<li><a href="http://blog.sina.com.cn/s/blog_9c581bd30101d9xg.html">The Ajax principle process synchronizes and asynchronously differentiates the pros and cons</a></li>
+							</ul>
+						</li>
+						<li>
+							<h2>Useful to React</h2>
+							<ul>
+								<li><a href="http://www.ruanyifeng.com/blog/2015/03/react.html">React primer example tutorial</a></li>
+								<li><a href="https://facebook.github.io/react/">A Simple Component </a></li>
+								<li><a href="http://www.cocoachina.com/webapp/20150721/12692.html">An introduction to ReactJs primer</a></li>
+								<li><a href="http://react-china.org/t/react-ie8/5611">The development government website USES React and is compatible with IE8</a></li>
+								<li><a href="http://developer.51cto.com/art/201512/503104.htm">How to develop a powerful Web application using React. Js</a></li>
+								<li><a href="https://segmentfault.com/a/1190000005356568">The example explains the front-end development process based on React + Redux</a></li>
+							</ul>
+						</li>
+						<li>
+							<h2>About the application of jsonp</h2>
+							<ul>
+								<li><a href="http://www.cnblogs.com/yuzhongwusan/archive/2012/12/11/2812849.html">jsonp Break down</a></li>
+								<li><a href="http://www.cnblogs.com/chopper/archive/2012/03/24/2403945.html">Deep into JSONP - solve ajax cross-domain problems</a></li>
+								<li><a href="http://blog.csdn.net/u011897301/article/details/52679486">Simple and thorough understanding of JSONP principle and usage</a></li>
+								<li><a href="http://blog.csdn.net/educast/article/details/50468800">The JSONP principle and implementation</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- end #sidebar -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+	<div id="footer">
+	<p>2012. Sitename.com.The mountain range, the water a journey, the body to the elm, the bank, night deep.The wind is more, the snow is more, the talk of the village heart dream is not, the garden does not have this sound.</p>
+  
+	</div>
+</div>
+<!-- end #footer -->
+</body>
+</html>
